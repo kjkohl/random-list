@@ -60,7 +60,7 @@ h1.title {
 }
 
 .day-group:hover {
-    transform: translateY(-10px);
+    transform: scale(1.05);
     box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4);
 }
 
@@ -70,10 +70,10 @@ h1.title {
     border-bottom: 2px solid #FF8C00;
     padding-bottom: 10px;
     font-size: 1.6rem;
-    animation: typewriter 2s steps(20) 1;
     overflow: hidden;
     white-space: nowrap;
     border-right: 4px solid #FF8C00;
+    animation: typewriter 2s steps(20) 1;
 }
 
 @keyframes typewriter {
@@ -85,25 +85,29 @@ h1.title {
     }
 }
 
-/* List styling */
+/* List styling with cool hover effect */
 ul.list {
     list-style-type: none;
     padding: 0;
 }
 
-ul.list li {
+.list-item {
     background-color: #555;
     padding: 15px;
     margin: 10px 0;
     border-radius: 10px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     color: #FFF;
     font-size: 1.1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
-ul.list li:hover {
+.list-item:hover {
     background: linear-gradient(45deg, #FF8C00, #FF3B00);
     color: #000;
+    transform: translateY(-5px);
 }
 
 /* Fade-in content animation */
