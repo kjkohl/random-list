@@ -7,6 +7,33 @@ body, html {
     color: #FFF;
 }
 
+/* Button styling */
+.button-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.regenerate-btn {
+    background: linear-gradient(45deg, #FF8C00, #FF3B00);
+    color: #FFF;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.regenerate-btn:hover {
+    background: linear-gradient(45deg, #FF3B00, #FF8C00);
+    transform: scale(1.05);
+}
+
+.regenerate-btn:active {
+    transform: scale(0.95);
+}
+
+
 /* Title styling with gradients */
 h1.title {
     text-align: center;
