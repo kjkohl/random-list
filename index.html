@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange and Black List Display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loading-screen" id="loading-screen">
+        <h1>Loading...</h1>
+    </div>
+    
+    <div class="content" id="content" style="display:none;">
+        <h1 class="title">List for the Week</h1>
+        <div class="day-group">
+            <h2>Wednesday</h2>
+            <ul id="wednesday-list" class="list"></ul>
+        </div>
+        <div class="day-group">
+            <h2>Thursday</h2>
+            <ul id="thursday-list" class="list"></ul>
+        </div>
+        <div class="day-group">
+            <h2>Friday</h2>
+            <ul id="friday-list" class="list"></ul>
+        </div>
+    </div>
 
+    <script src="script.js"></script>
+</body>
+</html>
