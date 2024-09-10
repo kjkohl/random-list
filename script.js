@@ -3,15 +3,17 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         document.getElementById('loading-screen').style.display = 'none';
         document.getElementById('content').style.display = 'block';
+        populateLists(); // Initial population of lists
     }, 3000); // 3-second loading screen delay
-    
+
+
     const originalItems = [
         'Kohl', 'Allman', 'White', 'Karnes',
         'Matako', 'Ezzo', 'Campbell', 'Lemon',
         'Jernigan', 'Studer', 'Bauer', 'Ries'
     ];
 
-    // Shuffle function to randomize the items
+     // Shuffle function to randomize the items
     function shuffleArray(array) {
         let currentIndex = array.length, randomIndex;
         while (currentIndex !== 0) {
@@ -46,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         clearLists(); // Clear previous lists
 
         // Shuffle the original items
-        const shuffledItems = shuffleArray([...originalItems]);
+        const shuffledItems = shuffleArray([...originalItems]); // Using your existing originalItems array
 
         // Split items into groups for each day
         const dayGroups = {
@@ -77,3 +79,5 @@ document.addEventListener('DOMContentLoaded', () => {
         populateLists();
     });
 });
+
+    
