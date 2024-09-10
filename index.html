@@ -3,30 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random List!</title>
+    <titleNameGen</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Upgraded Loading screen -->
     <div class="loading-screen" id="loading-screen">
+        <div class="loader"></div>
         <h1>Loading...</h1>
     </div>
-    
+
+    <!-- Content container with rounded edges -->
     <div class="content" id="content" style="display:none;">
         <h1 class="title">List for the Week</h1>
+
+        <!-- Wednesday group with animated typewriter effect -->
         <div class="day-group">
-            <h2>Wednesday</h2>
+            <h2 class="day-title">Wednesday</h2>
             <ul id="wednesday-list" class="list"></ul>
         </div>
+
+        <!-- Thursday group -->
         <div class="day-group">
-            <h2>Thursday</h2>
+            <h2 class="day-title">Thursday</h2>
             <ul id="thursday-list" class="list"></ul>
         </div>
+
+        <!-- Friday group -->
         <div class="day-group">
-            <h2>Friday</h2>
+            <h2 class="day-title">Friday</h2>
             <ul id="friday-list" class="list"></ul>
         </div>
     </div>
 
+    <!-- Link to JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
