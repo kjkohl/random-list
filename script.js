@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Original list items
     const originalItems = [
-        'Learn JavaScript', 'Work on project', 'Read a book', 'Go for a walk',
-        'Code a website', 'Attend a meeting', 'Write an article', 'Watch a documentary',
-        'Plan next week', 'Play a sport', 'Listen to music', 'Cook a new recipe'
+        'Kohl', 'Allman', 'White', 'Karnes',
+        'Matako', 'Ezzo', 'Campbell', 'Lemon',
+        'Jernigan', 'Studer', 'Bauer', 'Ries'
     ];
 
     // Shuffle function to randomize the items
