@@ -4,13 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('loading-screen').style.display = 'none';
         document.getElementById('content').style.display = 'block';
     }, 3000); // 3-second loading screen delay
-
-    // Original list items
+    
     const originalItems = [
         'Kohl', 'Allman', 'White', 'Karnes',
         'Matako', 'Ezzo', 'Campbell', 'Lemon',
         'Jernigan', 'Studer', 'Bauer', 'Ries'
     ];
+
+ 
 
     // Shuffle function to randomize the items
     function shuffleArray(array) {
@@ -34,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Function to type out each item letter by letter
-    function typeOutText(text, element, delay = 100) {
+    function typeOutText(text, element, delay = 50) {
         let index = 0;
         const interval = setInterval(() => {
             element.textContent += text[index];
@@ -50,8 +51,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const listElement = document.getElementById(`${day}-list`);
         items.forEach((item, index) => {
             const listItem = document.createElement('li');
+            listItem.className = 'list-item';
             listElement.appendChild(listItem);
-            setTimeout(() => typeOutText(item, listItem), index * 800); // Delay each item
+            setTimeout(() => typeOutText(item, listItem), index * 500); // Delay each item
         });
     };
 
