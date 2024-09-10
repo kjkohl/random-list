@@ -11,8 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
         'Jernigan', 'Studer', 'Bauer', 'Ries'
     ];
 
- 
-
     // Shuffle function to randomize the items
     function shuffleArray(array) {
         let currentIndex = array.length, randomIndex;
